@@ -10,11 +10,11 @@ Member.destroy_all
 
 Member.create!([
     {
-    std_first_name: "Whitney",
-    std_last_name: "Walker",
-    uin: "000000001",
-    telephone: "972-888-8888",
-    email: "whitneywalker@tamu.edu"
+        std_first_name: "Madelyn",
+        std_last_name: "Newland",
+        uin: "000000001",
+        telephone: "572-555-5555",
+        email: "madelynnewland@tamu.edu"
     },
     {
         std_first_name: "Zak",
@@ -24,6 +24,13 @@ Member.create!([
         email: "zakdcoleman@tamu.edu" 
     },
     {
+        std_first_name: "Jana",
+        std_last_name: "Basson",
+        uin: "000000003",
+        telephone: "979-777-7777",
+        email: "janabasson@tamu.edu"
+    },
+    {
         std_first_name: "Yada",
         std_last_name: "Van Noort",
         uin: "000000003",
@@ -31,37 +38,37 @@ Member.create!([
         email: "yadavannoort@tamu.edu"
     },
     {
-        std_first_name: "Anastasia",
-        std_last_name: "Papin",
-        uin: "000000004",
-        telephone: "214-666-6666",
-        email: "apaps98@tamu.edu"
-    },
-    {
-        std_first_name: "Madelyn",
-        std_last_name: "Newland",
+        std_first_name: "Faith",
+        std_last_name: "Rosas",
         uin: "000000005",
         telephone: "572-555-5555",
-        email: "madelynnewland@tamu.edu"
+        email: "faithrosastam@tamu.edu"
     },
     {
-        std_first_name: "Olivia",
-        std_last_name: "Reynolds",
+        std_first_name: "Katherine",
+        std_last_name: "Gellhausen",
         uin: "000000006",
         telephone: "979-999-9999",
-        email: "oliviareynolds@tamu.edu" 
+        email: "katherinegellhausen@tamu.edu" 
     },
     {
-        std_first_name: "Taylor",
-        std_last_name: "Lopez",
+        std_first_name: "Elise",
+        std_last_name: "Gellhausen",
         uin: "000000007",
         telephone: "979-999-9999",
-        email: "taylo916@tamu.edu" 
+        email: "elisegellhausen@tamu.edu" 
+    },
+    {
+        std_first_name: "Joanie",
+        std_last_name: "Jackson",
+        uin: "000000008",
+        telephone: "979-999-9999",
+        email: "jjackson20@tamu.edu" 
     },
     {
         std_first_name: "Alex",
         std_last_name: "Rivera",
-        uin: "000000008",
+        uin: "000000009",
         telephone: "979-999-9999",
         email: "airivera@tamu.edu" 
     }
@@ -101,13 +108,18 @@ Horse.create!([
         availability: true
     },
     {
-        horse_name: "Ivy",
-        brand_number: "8",
+        horse_name: "Full House",
+        brand_number: "9",
+        availability: true
+    },
+    {
+        horse_name: "PJ",
+        brand_number: "10",
         availability: false
     },
     {
-        horse_name: "Full House",
-        brand_number: "9",
+        horse_name: "Carta",
+        brand_number: "11",
         availability: true
     },
     {
@@ -123,6 +135,16 @@ Horse.create!([
     {
         horse_name: "Malachi",
         brand_number: "16",
+        availability: true
+    },
+    {
+        horse_name: "Mongha",
+        brand_number: "17",
+        availability: true
+    },
+    {
+        horse_name: "Jasmine",
+        brand_number: "18",
         availability: true
     },
     {
@@ -142,8 +164,8 @@ Horse.create!([
     },
     {
         horse_name: "Natasha",
-        brand_number: "29",
-        availability: true
+        brand_number: "26",
+        availability: false
     },
     {
         horse_name: "Martina",
@@ -185,6 +207,10 @@ Officer.create!([
     },
     {
         member_id: 8,
+        position: "Horse Care"
+    },
+    {
+        member_id: 9,
         position: "Horse Care Advisor"
     },
 ])
@@ -223,7 +249,7 @@ User.destroy_all
 User.create!([
     {
         member_id: 1,
-        email: "whitneywalker@tamu.edu",
+        email: "madelynnewland@tamu.edu",
         password: "Password",
         password_confirmation: "Password",
     },
@@ -235,36 +261,42 @@ User.create!([
     },
     {
         member_id: 3,
-        email: "yadavannoort@tamu.edu",
+        email: "janabasson@tamu.edu",
         password: "Password",
         password_confirmation: "Password",
     },
     {
         member_id: 4,
-        email: "apaps98@tamu.edu",
+        email: "yadavannoort@tamu.edu",
         password: "Password",
         password_confirmation: "Password",
     },
     {
         member_id: 5,
-        email: "madelynnewland@tamu.edu",
+        email: "faithrosastam@tamu.edu",
         password: "Password",
         password_confirmation: "Password",
     },
     {
         member_id: 6,
-        email: "oliviareynolds@tamu.edu",
+        email: "katherinegellhausen@tamu.edu",
         password: "Password",
         password_confirmation: "Password",
     },
     {
         member_id: 7,
-        email: "taylo916@tamu.edu",
+        email: "elisegellhausen@tamu.edu",
         password: "Password",
         password_confirmation: "Password",
     },
     {
         member_id: 8,
+        email: "jjackson20@tamu.edu",
+        password: "Password",
+        password_confirmation: "Password",
+    },
+    {
+        member_id: 9,
         email: "airivera@tamu.edu",
         password: "Password",
         password_confirmation: "Password",

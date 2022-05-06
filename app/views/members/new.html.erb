@@ -9,7 +9,7 @@
 
   <body>
     <div class = "container-fluid text-center">
-      <h3 id="title">Howdy! Fill out your profile below: </h3>
+      <h3 id="title">Howdy! Fill new member profile below: </h3>
       <br>
       <div class = "row justify-content-center text-center">
         <%= form_with model: @member do |form| %>
@@ -34,7 +34,7 @@
             <%= form.text_field :telephone, placeholder: "Phone Number" %>
           </div>
           <div class = "form-group">
-            <b><%= form.label :email, ' Re-enter Email' %></b>
+            <b><%= form.label :email, ' Student Email(used for logging in)' %></b>
             <br>
             <%= form.text_field :email, placeholder: "Email Address" %>
           </div>
