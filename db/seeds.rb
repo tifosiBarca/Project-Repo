@@ -78,9 +78,9 @@ Horse.destroy_all
 
 Horse.create!([
     {
-    horse_name: "Fortunata",
-    brand_number: "1",
-    availability: true
+        horse_name: "Fortunata",
+        brand_number: "1",
+        availability: true
     },
     {
         horse_name: "Cervesita",
@@ -219,8 +219,8 @@ RidingPreference.destroy_all
 
 RidingPreference.create!([
     {
-    member_id: 1 ,
-    horse_id: 1 
+        member_id: 1 ,
+        horse_id: 1 
     },
     {
         member_id: 1 ,
